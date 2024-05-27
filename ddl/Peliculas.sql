@@ -14,7 +14,8 @@ create table movies (
     año char(4),
     estrellas tinyint not null default 0, -- toma solo valores discretos?
     director varchar(50) not null,
-    primary key (id_movie)
+    PRIMARY KEY (id_movie),
+    UNIQUE KEY (nombre, año, director)
 );
 
 create table directores (
