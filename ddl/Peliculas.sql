@@ -22,7 +22,7 @@ create table directores (
     id_director int not null auto_increment,
     nombre varchar(50),
     apellido varchar(50) not null,
-    edad char(3),
+    edad tinyint,
     nacionalidad varchar(50),
     primary key(id_director),
     unique key(nombre, apellido, nacionalidad)
