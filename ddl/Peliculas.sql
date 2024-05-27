@@ -11,7 +11,7 @@ create table movies (
     descripcion varchar(255),
     genero varchar(255),
     calificacion int not null default 0, -- a que hace referencia?
-    año char(4),
+    año int,
     estrellas tinyint not null default 0, -- toma solo valores discretos?
     director varchar(50) not null,
     PRIMARY KEY (id_movie),
