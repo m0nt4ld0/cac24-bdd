@@ -24,7 +24,8 @@ create table directores (
     apellido varchar(50) not null,
     edad char(3),
     nacionalidad varchar(50),
-    primary key(id_director)
+    primary key(id_director),
+    unique key(nombre, apellido, nacionalidad)
 );
 
 create table usuarios (
@@ -35,5 +36,6 @@ create table usuarios (
     contraseña varchar(255) not null,
     fecha_nac date,
     pais varchar(50),
-    primary key(id_usuario)
+    primary key(id_usuario),
+    UNIQUE KEY(email)
 );
