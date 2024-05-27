@@ -10,7 +10,7 @@ create table movies (
     nombre varchar(50) not null,
     descripcion varchar(255),
     genero varchar(255),
-    calificacion decimal(3,2) not null default 0, -- a que hace referencia?
+    calificacion int not null default 0, -- a que hace referencia?
     año char(4),
     estrellas tinyint not null default 0, -- toma solo valores discretos?
     director varchar(50) not null,
